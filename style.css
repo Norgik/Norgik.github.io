@@ -56,7 +56,8 @@ h2 { font-size: 1.05rem; font-weight: 600; margin: 0; letter-spacing: -.005em; }
 section > p, section > ul { margin: 0; }
 ul { padding-left: 1.15rem; display: flex; flex-direction: column; gap: .4rem; }
 .shots { display: flex; gap: .9rem; overflow-x: auto; padding-bottom: .6rem; margin: 0; scroll-snap-type: x mandatory; }
-.shots img { width: 15rem; flex: 0 0 auto; border-radius: .9rem; border: 1px solid var(--rule); scroll-snap-align: start; }
+.shots img { width: 15rem; aspect-ratio: 1206 / 2622; object-fit: cover; background: var(--panel);
+  flex: 0 0 auto; border-radius: .9rem; border: 1px solid var(--rule); scroll-snap-align: start; }
 .linkrow { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; font-family: "Archivo", sans-serif; font-size: .92rem; font-weight: 500; }
 .note { font-size: .92rem; color: var(--ink-soft); }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .15em; }
