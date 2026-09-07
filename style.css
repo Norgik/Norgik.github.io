@@ -1,0 +1,68 @@
+:root {
+  --paper: #eef2f5; --panel: #ffffff; --ink: #16232e; --ink-soft: #4a5d6e;
+  --rule: #c6d2dc; --accent: #1b5e8c; --accent-wash: #e3edf5;
+  --live: #1c6b4a; --live-wash: #dcefe5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0c141a; --panel: #15202a; --ink: #e6eef4; --ink-soft: #9db2c2;
+    --rule: #2a3b48; --accent: #74b6e2; --accent-wash: #172936;
+    --live: #7fd0aa; --live-wash: #163025;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Literata", Georgia, serif; font-size: 1.02rem; line-height: 1.66;
+  font-optical-sizing: auto;
+}
+.sheet {
+  max-width: 46rem; margin: 0 auto;
+  padding: clamp(1.75rem, 5vw, 3.5rem) clamp(1.1rem, 4vw, 2rem) 4rem;
+  display: flex; flex-direction: column; gap: 2.25rem;
+}
+h1, h2, h3, .label, .brandmark, .nav, .badge, .applist h2, .meta { font-family: "Archivo", "Helvetica Neue", Arial, sans-serif; }
+header { display: flex; flex-direction: column; gap: .85rem; }
+.brandmark { font-size: .74rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin: 0; }
+h1 { font-size: clamp(1.85rem, 5.5vw, 2.6rem); font-weight: 700; line-height: 1.1; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.meta { font-size: .84rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: .4rem 1.1rem;
+  padding-top: .2rem; border-top: 1px solid var(--rule); margin: 0; }
+.summary { background: var(--accent-wash); border-left: 3px solid var(--accent); padding: 1.15rem 1.3rem;
+  display: flex; flex-direction: column; gap: .5rem; }
+.summary p { margin: 0; }
+.summary .lead { font-size: 1.1rem; font-weight: 600; }
+
+/* витрина */
+.applist { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); }
+.app {
+  display: grid; grid-template-columns: 4rem 1fr; gap: 1.1rem; align-items: start;
+  padding: 1.4rem .2rem; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit;
+}
+.app:hover .apptitle { text-decoration: underline; text-underline-offset: .18em; }
+.app img { width: 4rem; height: 4rem; border-radius: 1rem; display: block; box-shadow: 0 1px 3px rgb(0 0 0 / .18); }
+.appbody { display: flex; flex-direction: column; gap: .35rem; }
+.apptitle { font-family: "Archivo", sans-serif; font-size: 1.12rem; font-weight: 700; letter-spacing: -.01em; margin: 0; color: var(--accent); }
+.app p { margin: 0; font-size: .97rem; }
+.badge {
+  display: inline-block; align-self: flex-start; font-size: .68rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; padding: .2rem .5rem;
+  background: var(--accent-wash); color: var(--accent); border-radius: 2px;
+}
+.badge.live { background: var(--live-wash); color: var(--live); }
+
+/* страницы приложений */
+section { display: flex; flex-direction: column; gap: .7rem; }
+h2 { font-size: 1.05rem; font-weight: 600; margin: 0; letter-spacing: -.005em; }
+section > p, section > ul { margin: 0; }
+ul { padding-left: 1.15rem; display: flex; flex-direction: column; gap: .4rem; }
+.shots { display: flex; gap: .9rem; overflow-x: auto; padding-bottom: .6rem; margin: 0; scroll-snap-type: x mandatory; }
+.shots img { width: 15rem; flex: 0 0 auto; border-radius: .9rem; border: 1px solid var(--rule); scroll-snap-align: start; }
+.linkrow { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; font-family: "Archivo", sans-serif; font-size: .92rem; font-weight: 500; }
+.note { font-size: .92rem; color: var(--ink-soft); }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .15em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.nav { display: flex; gap: 1.2rem; font-size: .88rem; font-weight: 500; }
+footer { border-top: 2px solid var(--ink); padding-top: 1.1rem; display: flex; flex-direction: column; gap: .35rem; font-size: .95rem; }
+footer p { margin: 0; }
+.disclaim { font-size: .88rem; color: var(--ink-soft); }
+.pageicon { width: 5rem; height: 5rem; border-radius: 1.15rem; box-shadow: 0 1px 3px rgb(0 0 0 / .18); display: block; }
