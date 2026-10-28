@@ -6,10 +6,10 @@ Prosjektsider for appene mine, publisert med GitHub Pages: <https://norgik.githu
 | --- | --- | --- |
 | Bølge | I App Store | [/bolge/](https://norgik.github.io/bolge/) |
 | Sykkylv1 | Lukket testing | [/sykkylv1/](https://norgik.github.io/sykkylv1/) |
-| NorskFlow | Under utvikling | [/norskflow/](https://norgik.github.io/norskflow/) |
+| NorskFlow | I App Store | [/norskflow/](https://norgik.github.io/norskflow/) |
 | Lille Elg | Under utvikling | [/lille-elg/](https://norgik.github.io/lille-elg/) |
 | Smart Chair Control | Prototype | [/smart-chair/](https://norgik.github.io/smart-chair/) |
-| Fjorddetektivene | Under utvikling | [/sundvik/](https://norgik.github.io/sundvik/), [/sundvik/en/](https://norgik.github.io/sundvik/en/) |
+| Fjorddetektivene 1 og 2 | I App Store | [/sundvik/](https://norgik.github.io/sundvik/), [/sundvik/en/](https://norgik.github.io/sundvik/en/) |
 
 Personvern- og supportsidene ligger fortsatt i sine egne repoer
 (`sykkylv1-legal`, `atlas-radio-legal`), fordi lenkene til dem er registrert
